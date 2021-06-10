@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/unashop-client/node_modules
+/unashop-client/.pnp
+/unashop-client.pnp.js
+
+# testing
+/unashop-client/coverage
+
+# production
+/unashop-client/build
+
+# misc
+/unashop-client.DS_Store
+/unashop-client.env.local
+/unashop-client.env.development.local
+/unashop-client.env.test.local
+/unashop-client.env.production.local
+
+/unashop-clientnpm-debug.log*
+/unashop-clientyarn-debug.log*
+/unashop-clientyarn-error.log*
+
+/data
+/data-directory

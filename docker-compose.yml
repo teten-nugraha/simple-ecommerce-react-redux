@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mongo:
+    image: bitnami/mongodb
+    container_name: db-unashop-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - "/demo-vol:/data/db"
+    networks:
+      - mynet
+    ports:
+      - 27017:27017
+volumes:
+  demo-vol:
+    driver: local
+networks:
+  mynet:
+    external: true
