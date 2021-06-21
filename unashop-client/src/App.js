@@ -1,10 +1,18 @@
 import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Homescreen from './screens/Homescreen';
+import ProductScreen from './screens/ProductScreen';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Unahop</h1>
+      <Navbar />
+      <BrowserRouter>
+        <Route path='/' component={Homescreen}  exact/>
+        <Route path='/product/:id' component={ProductScreen} />
+      </BrowserRouter>
     </div>
   );
 }
