@@ -30,3 +30,7 @@
 /node_modules
 
 /unashop-server/node_modules
+
+package-lock.json
+/unashop-server/package-lock.json
+/unashop-client/package-lock.json
