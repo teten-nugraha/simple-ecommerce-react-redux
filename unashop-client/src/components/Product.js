@@ -4,9 +4,9 @@ import Rating from 'react-rating';
 
 export default function Product({ product }) {
   return (
-    <div className="col-md-3 m-5 card p-2 text-left" key={product.id}>
-      <div>
-        <Link to={`product/${product.id}`}>
+    <div className="text-left" key={product._id}>
+      <div> 
+        <Link to={`product/${product._id}`}>
         <Rating
           style={{color:'orange'}}
           initialRating={product.rating}

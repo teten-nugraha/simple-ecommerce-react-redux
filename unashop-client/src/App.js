@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <BrowserRouter>
         <Route path='/' component={Homescreen}  exact/>
-        <Route path='/product/:id' component={ProductScreen} />
+        <Route path='/product/:_id' component={ProductScreen} />
       </BrowserRouter>
     </div>
   );

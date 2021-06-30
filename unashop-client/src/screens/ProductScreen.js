@@ -5,7 +5,8 @@ export default function ProductScreen({ match }) {
 
   const productId = match.params.id;
 
-  const product = products.find(product => product.id == productId)
+  const product = products.find(product => product._id == productId)
+  console.log(product)
 
   return (
     <div>
